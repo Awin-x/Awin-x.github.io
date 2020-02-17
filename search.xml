@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2020/2/15/hello-world/</url>
+    <url>/2020/2/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="First-change……"><a href="#First-change……" class="headerlink" title="First change……"></a>First change……</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -20,19 +20,31 @@
   </entry>
   <entry>
     <title>python的安装</title>
-    <url>/2020/2/13/python%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>因为看见别人用python编出了好帅好帅的程序……so……我也开始学了。  </p>
-<h3 id="python的安装"><a href="#python的安装" class="headerlink" title="python的安装"></a>python的安装</h3><p>python的定义：<del>自己百度</del>  </p>
-<p>python是一门解释性语言，可以让工作更加有效率。[^听说是一门很好掌握的玩意儿。。]<br>目前好像python3比python2更加出名（可能是因为好用吧，所以选python3了。）</p>
-<h1 id="python的安装-1"><a href="#python的安装-1" class="headerlink" title="python的安装"></a>python的安装</h1><p>打开<a href="https://www.python.org/">python官网</a>。在下载中找到最新的版本，个人认为基于web的版本的安装器真的不好用因为太慢了而且很容易安装失败（在尝试了3个小时后才发现有可执行文件安装文件。）  </p>
-]]></content>
+    <url>/2020/2/python%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>因为看见别人用python编出了好帅好帅的程序……so……我也开始学了。 </p>
+<h1 id="个人笔记。。（要学python，我发现了一个很厉害的免费地址！！！）"><a href="#个人笔记。。（要学python，我发现了一个很厉害的免费地址！！！）" class="headerlink" title="个人笔记。。（要学python，我发现了一个很厉害的免费地址！！！）"></a>个人笔记。。（<a href="https://www.liaoxuefeng.com/wiki/1016959663602400">要学python，我发现了一个很厉害的免费地址！！！</a>）</h1><h1 id="python的安装"><a href="#python的安装" class="headerlink" title="python的安装"></a>python的安装</h1><p>python的定义：<del>自己百度</del>  </p>
+<p>python是一门解释性语言，可以让工作更加有效率。[^听说是一门很好掌握的玩意儿。。]<br>目前好像python3比python2更加出名（可能是因为好用吧，所以选python3了。）  </p>
+<h2 id="python的安装-1"><a href="#python的安装-1" class="headerlink" title="python的安装"></a>python的安装</h2><p>打开<a href="https://www.python.org/">python官网</a>  。在下载中找到最新的版本，个人认为基于web的版本的安装器真的不好用因为太慢了而且很容易安装失败（在尝试了3个小时后才发现有可执行文件安装文件。）  </p>
+<p><img src="/2020/2/python%E7%9A%84%E5%AE%89%E8%A3%85/python_download.png" alt="python_download"></p>
+<h2 id="python环境"><a href="#python环境" class="headerlink" title="python环境"></a>python环境</h2><p>安装好python后还要配置环境变量，就是把python安装的目录写进path变量。比如python安装在[^C:\Python36],就把  </p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">C:<span class="symbol">\P</span>ython36<span class="symbol">\;</span>C:<span class="symbol">\P</span>ython36<span class="symbol">\S</span>cripts\</span><br></pre></td></tr></table></figure>
+<p>写进path环境变量（添加在已有的后面本来有的别删，<del>不信你试试，结果评论告诉我</del>。）<br>如果你的python是按照默认安装的，可以直接执行：<del>好不好使我也不知道，网上找到的，没用过。</del>  </p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">[Environment]::SetEnvironmentVariable("PATH","<span class="formula">$env:Path;C:<span class="tag">\<span class="name">Python</span></span>36<span class="tag">\<span class="name">;</span></span>C:<span class="tag">\<span class="name">Python</span></span>36<span class="tag">\<span class="name">Scripts</span></span><span class="tag">\<span class="name">"</span></span>,"User")</span></span><br></pre></td></tr></table></figure>
+<h2 id="python-pip-安装"><a href="#python-pip-安装" class="headerlink" title="python pip 安装"></a>python pip 安装</h2><p>pip对于python来说可以说是一个非常必要的一个插件了，可以用来安装和管理python的工具包，非常好用。好像很多新版本的python已经嵌入了pip功能了，可以通过在终端输入[^pip -V]来检查pip，如果没有安装可以用  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ python -m ensurepip</span><br><span class="line">$ python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<p>来安装。</p>
+<h2 id="python-Virtualenv-虚拟环境"><a href="#python-Virtualenv-虚拟环境" class="headerlink" title="python Virtualenv 虚拟环境"></a>python Virtualenv 虚拟环境</h2><p>来试一下pip吧：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install virtualenv</span><br></pre></td></tr></table></figure>
+<p>怎么用的话，我不知道，用[^virtualenv]问终端吧。（<del>我看不懂</del>）<br><img src="/2020/2/python%E7%9A%84%E5%AE%89%E8%A3%85/virtualenv.png" alt="virtualenv"></p>
+<h2 id="python-Requests-工具包"><a href="#python-Requests-工具包" class="headerlink" title="python Requests 工具包"></a>python Requests 工具包</h2><p>安装它！！</p>
+<pre><code>pip install requests</code></pre><h1 id="戛然而止。。。（不写了）"><a href="#戛然而止。。。（不写了）" class="headerlink" title="戛然而止。。。（不写了）"></a>戛然而止。。。（<del>不写了</del>）</h1>]]></content>
       <tags>
         <tag>我的python爬虫学习笔记</tag>
       </tags>
   </entry>
   <entry>
     <title>可以评论了！</title>
-    <url>/2020/2/12/%E5%8F%AF%E4%BB%A5%E8%AF%84%E8%AE%BA%E4%BA%86%EF%BC%81/</url>
+    <url>/2020/2/%E5%8F%AF%E4%BB%A5%E8%AF%84%E8%AE%BA%E4%BA%86%EF%BC%81/</url>
     <content><![CDATA[<h3 id="用了valine评论"><a href="#用了valine评论" class="headerlink" title="用了valine评论"></a>用了valine评论</h3><h2 id="不要乱讲"><a href="#不要乱讲" class="headerlink" title="不要乱讲"></a>不要乱讲</h2><h1 id="谢谢"><a href="#谢谢" class="headerlink" title="谢谢"></a>谢谢</h1>]]></content>
       <tags>
         <tag>关于本站</tag>
@@ -40,7 +52,7 @@
   </entry>
   <entry>
     <title>将博客搬至CSDN</title>
-    <url>/2020/2/12/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3csdn/</url>
+    <url>/2020/2/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3csdn/</url>
     <content><![CDATA[<p>将博客搬至CSDN</p>
 <h1 id="将博客搬至CSDN"><a href="#将博客搬至CSDN" class="headerlink" title="将博客搬至CSDN"></a>将博客搬至CSDN</h1><h2 id="将博客搬至CSDN-1"><a href="#将博客搬至CSDN-1" class="headerlink" title="将博客搬至CSDN"></a>将博客搬至CSDN</h2><h3 id="将博客搬至CSDN-2"><a href="#将博客搬至CSDN-2" class="headerlink" title="将博客搬至CSDN"></a>将博客搬至CSDN</h3>]]></content>
       <tags>
@@ -49,7 +61,7 @@
   </entry>
   <entry>
     <title>插入了一枚看板娘！！！</title>
-    <url>/2020/2/11/%E6%8F%92%E5%85%A5%E4%BA%86%E4%B8%80%E6%9E%9A%E7%9C%8B%E6%9D%BF%E5%A8%98%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+    <url>/2020/2/%E6%8F%92%E5%85%A5%E4%BA%86%E4%B8%80%E6%9E%9A%E7%9C%8B%E6%9D%BF%E5%A8%98%EF%BC%81%EF%BC%81%EF%BC%81/</url>
     <content><![CDATA[<h2 id="插入了一枚看板娘！！！"><a href="#插入了一枚看板娘！！！" class="headerlink" title="插入了一枚看板娘！！！"></a>插入了一枚看板娘！！！</h2><h1 id="就在右下角。"><a href="#就在右下角。" class="headerlink" title="就在右下角。"></a>就在右下角。</h1><h1 id="是真的折腾了整整两天。闲话也不说那么多，其实弄完过后也不难。。。但是网上的各种教程让我这种学生党-智障-小白-手残完全是一脸懵逼。。"><a href="#是真的折腾了整整两天。闲话也不说那么多，其实弄完过后也不难。。。但是网上的各种教程让我这种学生党-智障-小白-手残完全是一脸懵逼。。" class="headerlink" title="是真的折腾了整整两天。闲话也不说那么多，其实弄完过后也不难。。。但是网上的各种教程让我这种学生党+智障+小白+手残完全是一脸懵逼。。"></a>是真的折腾了整整两天。闲话也不说那么多，其实弄完过后也不难。。。但是网上的各种教程让我这种<em>学生党+智障+小白+手残</em>完全是一脸懵逼。。</h1><p>我也做一个小教程吧。。。如果没搭博客的自己百度（Or Google）[^hexo+github].<br>看板娘是一种利用了live2D的一个模块，用简单的图形移动，旋转，扭曲实现动态效果。  </p>
 <h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h1 id="1-安装live2d模块"><a href="#1-安装live2d模块" class="headerlink" title="1.安装live2d模块"></a>1.安装live2d模块</h1><pre><code>npm install --save hexo-helper-live2d</code></pre><p><del>不知道为什么在我的电脑上安了一个小时才安装好……</del><br>Hexo官方是支持看板娘的，而且是封装好的插件，但功能很少，只能显示一个人物。   </p>
 <h1 id="2-修改配置"><a href="#2-修改配置" class="headerlink" title="2.修改配置"></a>2.修改配置</h1><p>在博客根目录下的[^_config.yml]里面添加如下代码：  </p>
